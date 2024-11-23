@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section >
+        <div class="container d-flex  flex-column justify-content-center align-items-center">
+            <h1 class="title ">Bookmarker</h1>
+            <div class="content my-5 w-100 d-flex justify-content-center flex-column  py-4">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-2"></i></h2>
+
+                <div class=" d-flex justify-content-center flex-column px-4">
+                    <div class="mb-3">
+                      <label for="siteName" class="form-label"><i class="fa-solid fa-bookmark me-2"></i>Site Name</label>
+                      <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name" >
+             
+                    </div>
+                    <div class="mb-3">
+                      <label for="siteUrl" class="form-label"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                      <input type="url" class="form-control" id="siteUrl" placeholder="Website URL">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit  " onclick="addBookmark()">Submit</button>
+                </div>
+   
+            </div>
+            <div class=" px-4 w-100">
+                <table class="table " style="--bs-table-color: black;--bs-table-bg:#F8F9FA;">
+                    <thead class=" fw-bold ">
+                        <tr class="text-center">
+                            <td>Index</td>
+                            <td>Website Name</td>
+                            <td>Visit</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
